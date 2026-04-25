@@ -1,0 +1,322 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 2rem;
+}
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dashboard-header p {
+  color: #9ca3af;
+  margin-top: 0.5rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(31, 41, 55, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(75, 85, 99, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number.green { color: #10b981; }
+.stat-number.blue { color: #3b82f6; }
+.stat-number.red { color: #ef4444; }
+.stat-number.orange { color: #f59e0b; }
+
+.stat-unit {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.progress-wrapper {
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  background: #374151;
+  border-radius: 9999px;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+/* Charts Grid */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background: rgba(31, 41, 55, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(75, 85, 99, 0.5);
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-icon {
+  font-size: 1.5rem;
+}
+
+/* Threats Section */
+.threats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.threat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(55, 65, 81, 0.3);
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.threat-item:hover {
+  background: rgba(55, 65, 81, 0.5);
+  transform: translateX(5px);
+}
+
+.threat-info {
+  flex: 1;
+}
+
+.threat-name {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.threat-score-text {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.threat-score-circle {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.circle-bg {
+  stroke: #374151;
+  stroke-width: 3;
+}
+
+.circle-progress {
+  stroke: #ef4444;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s;
+}
+
+.circle-text {
+  fill: #ef4444;
+  font-size: 14px;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* Anomaly Section */
+.anomalies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.anomaly-card {
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.anomaly-card.wildcard {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.05));
+  border-left: 3px solid #f59e0b;
+}
+
+.anomaly-card.ringer {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+  border-left: 3px solid #ef4444;
+}
+
+.anomaly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.anomaly-name {
+  font-weight: 600;
+  color: white;
+}
+
+.anomaly-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.anomaly-badge.wildcard {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+.anomaly-badge.ringer {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.anomaly-value {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.anomaly-confidence {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.phase-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.phase-table th {
+  text-align: left;
+  padding: 1rem;
+  color: #9ca3af;
+  font-weight: 500;
+  border-bottom: 2px solid #374151;
+}
+
+.phase-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #374151;
+  color: #d1d5db;
+}
+
+.effort-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.effort-badge.high {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.effort-badge.normal {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.effort-badge.low {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.survived {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.status-badge.eliminated {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard { padding: 1rem; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .anomalies-grid { grid-template-columns: 1fr; }
+  .dashboard-header h1 { font-size: 1.75rem; }
+  .stat-number { font-size: 2rem; }
+}

@@ -1,0 +1,138 @@
+{
+  "applicants": [
+    {
+      "id": 1,
+      "name": "Gon Freecss",
+      "speed": 85,
+      "strength": 80,
+      "intelligence": 70,
+      "nenControl": 75,
+      "teamwork": 90,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 2,
+      "name": "Killua Zoldyck",
+      "speed": 95,
+      "strength": 85,
+      "intelligence": 85,
+      "nenControl": 80,
+      "teamwork": 70,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 3,
+      "name": "Kurapika",
+      "speed": 75,
+      "strength": 70,
+      "intelligence": 95,
+      "nenControl": 85,
+      "teamwork": 65,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 4,
+      "name": "Leorio Paradinight",
+      "speed": 60,
+      "strength": 65,
+      "intelligence": 80,
+      "nenControl": 60,
+      "teamwork": 88,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 5,
+      "name": "Hisoka Morrow",
+      "speed": 90,
+      "strength": 92,
+      "intelligence": 88,
+      "nenControl": 95,
+      "teamwork": 40,
+      "energy": 100,
+      "isWildcard": true,
+      "isRinger": true,
+      "trueStats": {
+        "speed": 96,
+        "strength": 98,
+        "intelligence": 92,
+        "nenControl": 98,
+        "teamwork": 35
+      }
+    },
+    {
+      "id": 6,
+      "name": "Illumi Zoldyck",
+      "speed": 88,
+      "strength": 82,
+      "intelligence": 92,
+      "nenControl": 90,
+      "teamwork": 50,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": true,
+      "trueStats": {
+        "speed": 94,
+        "strength": 88,
+        "intelligence": 96,
+        "nenControl": 94,
+        "teamwork": 45
+      }
+    },
+    {
+      "id": 7,
+      "name": "Biscuit Krueger",
+      "speed": 82,
+      "strength": 88,
+      "intelligence": 92,
+      "nenControl": 96,
+      "teamwork": 85,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 8,
+      "name": "Wing",
+      "speed": 70,
+      "strength": 72,
+      "intelligence": 78,
+      "nenControl": 82,
+      "teamwork": 75,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 9,
+      "name": "Zushi",
+      "speed": 65,
+      "strength": 60,
+      "intelligence": 75,
+      "nenControl": 70,
+      "teamwork": 80,
+      "energy": 100,
+      "isWildcard": false,
+      "isRinger": false
+    },
+    {
+      "id": 10,
+      "name": "Tonpa",
+      "speed": 50,
+      "strength": 48,
+      "intelligence": 65,
+      "nenControl": 45,
+      "teamwork": 30,
+      "energy": 100,
+      "isWildcard": true,
+      "isRinger": false
+    }
+  ]
+}

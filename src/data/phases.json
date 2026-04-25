@@ -1,0 +1,44 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "name": "Marathon Run",
+      "statRequirements": { "speed": 0.7, "strength": 0.1, "intelligence": 0.1, "nenControl": 0.05, "teamwork": 0.05 },
+      "eliminationRate": 0.15,
+      "energyCost": 25,
+      "allianceMultiplier": 1.0
+    },
+    {
+      "id": 2,
+      "name": "Cooking Competition",
+      "statRequirements": { "speed": 0.1, "strength": 0.1, "intelligence": 0.6, "nenControl": 0.1, "teamwork": 0.1 },
+      "eliminationRate": 0.10,
+      "energyCost": 15,
+      "allianceMultiplier": 1.2
+    },
+    {
+      "id": 3,
+      "name": "Trick Tower",
+      "statRequirements": { "speed": 0.2, "strength": 0.4, "intelligence": 0.2, "nenControl": 0.1, "teamwork": 0.1 },
+      "eliminationRate": 0.20,
+      "energyCost": 30,
+      "allianceMultiplier": 0.9
+    },
+    {
+      "id": 4,
+      "name": "Nen Baptism",
+      "statRequirements": { "speed": 0.1, "strength": 0.1, "intelligence": 0.1, "nenControl": 0.7, "teamwork": 0.0 },
+      "eliminationRate": 0.25,
+      "energyCost": 35,
+      "allianceMultiplier": 0.8
+    },
+    {
+      "id": 5,
+      "name": "Final Tournament",
+      "statRequirements": { "speed": 0.25, "strength": 0.25, "intelligence": 0.15, "nenControl": 0.25, "teamwork": 0.1 },
+      "eliminationRate": 0.30,
+      "energyCost": 30,
+      "allianceMultiplier": 1.1
+    }
+  ]
+}
